@@ -1,0 +1,62 @@
+<div class="container-home">
+    <app-navbar></app-navbar>
+    <div class="content-home">
+        <h1>Lista dos alunos do curso</h1>
+        <form [formGroup]="searchForm">
+            <div class="filter-form">
+                <div>
+                    <label htmlFor="nome">Pesquisar</label>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        placeholder='Nome do aluno'
+                        formControlName="nameStudent"
+                        (keyup)="searchName('name')"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="nacionalidade">Nacionalidade</label>
+                    <select 
+                        name="nacionalidade" 
+                        id="nacionalidade"
+                        formControlName="nationality"
+                        (change)="searchName('nation')"
+                    >
+                        <option value="">Todas</option>
+                        <ng-container *ngFor="let nation of dataUser">
+                            <option [value]="nation.location.country">{{nation.location.country}}</option>
+                        </ng-container>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <table class="table-content">
+            <ng-container *ngIf="!loading && !error">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sexo</th>
+                        <th>Nacionalidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of (dataUser | arrayFiltro : filtro : typeFilter)">
+                        <td>{{item.name.first}} {{item.name.last}}</td>
+                        <td>{{item.gender}}</td>
+                        <td>{{item.location.country}}</td>
+                        <td>
+                            <button (click)="openModal(item)">Visualizar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </ng-container>
+            <ng-container *ngIf="loading">
+                <p>Carregando ...</p>
+            </ng-container>
+            <ng-container *ngIf="!loading && error">
+                <p>Erro!</p>
+            </ng-container>
+        </table>
+    </div>
+</div>
