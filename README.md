@@ -41,7 +41,7 @@ Abrir o arquivo local: `ng serve
 Compilar Projeto: `ng build 
 ```
 ***
-vExecutando testes de unidade
+🌐 Executando testes de unidade
 
 ➡ Execute ng test para executar os testes de unidade via Karma.
 
