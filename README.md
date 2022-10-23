@@ -5,9 +5,9 @@
 # <div align="center">💻 [Clique aqui para acessar o Projeto](https://dev-angular.netlify.app/)
  </div>
 
-<div align="center">
-<img  "width="100%" alt="Screen Shot 2022-07-21 at 22 39 08" src="https://github.com/MaiaraSanto/Student-StackX/blob/main/imagem.png">
- </div>
+ <div align="center">
+   <img height="380em"width="70%"src="https://media.giphy.com/media/aqwBRytndWevuWjGFQ/giphy.gif"/>
+</div>
  
  ***
 
