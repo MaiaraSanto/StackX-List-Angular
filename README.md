@@ -96,7 +96,7 @@ Gerar navbar: `ng  g c components/navbar
 ***
 🌐 Mais ajuda
 
-➡ Para obter mais ajuda sobre a CLI Angular, use `ng help` ou confira a página `Visão geral da CLI Angular e referência de comando`.
+➡ Para obter mais ajuda sobre a CLI Angular, use `ng help`, ou confira a página `Visão geral da CLI Angular e referência de comando`.
 
 
 
