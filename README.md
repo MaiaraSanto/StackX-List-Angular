@@ -2,7 +2,7 @@
 
 ***
 
-# <div align="center">💻 [Clique aqui para acessar o Projeto](https://dev-angular.netlify.app/)
+# <div align="center">💻 [Clique aqui para acessar o Projeto](https://dev-angular.netlify.app/).
  </div>
 
  <div align="center">
